@@ -14,6 +14,11 @@ You might be tested or examined by the exercise leader, that you understand the 
 So please, look at the code **only at the last resort**.
 Also, understanding the topic will help you later when writing the exam.
 
+### Note
+
+The whole code is not mine. The labs work in the way that we get a skeleton of a project, that we then have to correctly fill with code (meaning I only wrote certain functions or generally parts of the source file).
+Names of true authors of the labs are mentioned in every lab file with name matching `cv[1-5].cpp`. For `cv6.glsl` we were given the task verbally, then wrote the code ourselves.
+
 ### Disclaimer
 
 These solutions are only for the year 2022/2023, I do not guarantee, that the assignments won't change and the codes might not work in the future.
