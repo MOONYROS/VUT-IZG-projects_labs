@@ -11,7 +11,7 @@ in this repository, there are both:
 In `exercises/.`, there are all the finished codes for all the labs but **use them only as an inspiration**.
 **Make sure you understand the given task** before you just `Ctrl + C`, `Ctrl + V` anything from this repository.
 You might be tested or examined by the exercise leader, that you understand the code you have written (at least we were).
-So please, look at the code **only at the last resort**.
+So please, look at the code **only as the last resort**.
 Also, understanding the topic will help you later when writing the exam.
 
 ### Note
