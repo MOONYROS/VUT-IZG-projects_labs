@@ -3,6 +3,7 @@ float posX = random(300); // set the default X and Y positions to random
 float posY = random(400); // posX in <0, 300) and posY in <0, 400)
 float ballR = 10;
 float dX = 3;
+float dY = 3;
 
 // variables for the paddle
 float pposX;
@@ -38,9 +39,14 @@ void draw() {
   
   // moving the ball
   posX = posX + dX;
-  // if the ball reaches one of the screen borders, it should go back
+  posY = posY + dY;
+  // if the ball reaches one of the screen borders, it should change direction
+  // for both directions dX and dY
   if(posX > width || posX < 0) {
     dX = -dX;
+  }
+  if (posY > height || posY < 0) {
+    dY = -dY;
   }
   
   pushMatrix();
