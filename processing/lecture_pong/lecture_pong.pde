@@ -1,8 +1,8 @@
 // variables for the ball
 float posX = 30;
-float posY = 30;
-float ballR = 30;
-float dX = 1;
+float posY = 170;
+float ballR = 10;
+float dX = 3;
 
 // variables for the paddle
 float pposX;
@@ -34,15 +34,18 @@ void setup() {
 void draw() {
   // setting up color of background
   background(255, 255, 255);
+  ball();
   
+  // moving the ball
   posX = posX + dX;
+  // if the ball reaches one of the screen borders, it should go back
   if(posX > width || posX < 0) {
     dX = -dX;
   }
   
   pushMatrix();
   translate(posX, posX);
-  ball();
+  
   popMatrix();
   
   translate(pposX, pposY);
