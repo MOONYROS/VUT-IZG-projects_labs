@@ -1,6 +1,6 @@
 // variables for the ball
-float posX = 30;
-float posY = 170;
+float posX = random(300); // set the default X and Y positions to random
+float posY = random(400); // posX in <0, 300) and posY in <0, 400)
 float ballR = 10;
 float dX = 3;
 
