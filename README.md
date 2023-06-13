@@ -2,12 +2,12 @@
 
 This repository consists of tasks for IZG classes on BUT FIT for the year 2022/2023.
 Also there is one small code from Processing that was done in one lecture, so I tried to code it myself.
-So, if you want, you can also check it out, it is definitely helpful.
-In this repository, there are both:
+If you want, you can also check it out, it is definitely helpful.
+In this repository, you can find:
 
 - exercises/labs
 - project
-- processing (pong)
+- processing (Pong)
 
 ## Exercises/Labs
 
@@ -39,14 +39,14 @@ The whole project is written in `C++` and is tested on:
 
 ## Processing
 
-In `processing/.` there is a tiny (about 100 lines) code in processing language that is a basically a very simple game of Pong for one player.
-The ball just bouces of the wall on the other side of the player.
-If the ball goes behind the player, the game ends and you can just quit it and the run it again to play the game.
+In `processing/.` there is a tiny (about 100 lines) code in Processing language (something like Java) that is a basically a very simple game of Pong for one player.
+The ball simply bouces off the wall on the other side of the player.
+If the ball goes behind the player, the game ends and you can just quit it and the run it again to play the game once more.
 
 ### How to run
 
 You need to download and install [Processing](https://processing.org/download) that is available on basically all the platforms.
-After the installation, a little editor will open. Then in the `File` tab, you click `Open` and select the `lecture_pong.pde` file from this repository.
+After the installation, a very simple editor will open. Then in the `File` tab, you click `Open` and select the `lecture_pong.pde` file from this repository.
 After this, you can just click the play button, that will compile code and run the game.
 
 **Please note that the game was tested on Processing version 4.2.**
