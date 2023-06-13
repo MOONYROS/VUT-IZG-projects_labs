@@ -49,20 +49,24 @@ void draw() {
     dY = -dY;
   }
   
+  // saving current transformation matrix onto stack
   pushMatrix();
+  // moves the origin of the coordinate system to the specified (posX, posX) location
   translate(posX, posX);
-  
+  // popMatrix() restores the previous transformation matrix from the stack
   popMatrix();
   
   translate(pposX, pposY);
   paddle();
   
+  // if there is a collision with the bat, change the direction
   if (collision()) {
     dX = -dX;
   }
+  
+  // if the ball is behind the screen, the game ends
   if (posX + ballR > width) {
-    fill(255, 0, 0, 100);
-    rect(0, 0, width, height);
+    background(255, 117, 117); // when losing, the game just shows a red screen
     noLoop();
   }
   
@@ -70,12 +74,12 @@ void draw() {
   if (keyPressed) {
     if (key == CODED) {
       if (keyCode == UP) { // if up arrow was pressed
-        if (pposY >= 0) { // move up unless you are on top of the screen
+        if (pposY >= 0) { // move up unless you are at the top of the screen
           pposY = pposY - 5;
         }
       }
       if (keyCode == DOWN) { // if down arrow was pressed
-        if (pposY <= height - paddleH) { // move down unless you are on the bottom of the screen
+        if (pposY <= height - paddleH) { // move down unless you are at the bottom of the screen
           pposY = pposY + 5;
         }
       }
